@@ -59,6 +59,7 @@ document.getElementById("vulpes").addEventListener("click", function() {
   if (home) {
     home.addEventListener("click", function () {
       window.location.href = "http://localhost/image/index.php?";
+      
     });
   }
 
