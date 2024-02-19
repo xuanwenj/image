@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cat Video</title>
+    <!-- Because this is a simple html, so I put the style inside of it -->
+    <style>
+        body {
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fcdad9;
+            padding: 10px;
+        }
+
+        #main {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        h1 {
+            transform: translateX(-100%);
+            animation: marquee 8s infinite linear;
+
+        }
+        #home{
+            font-size: 20px;
+        }
+        @keyframes marquee {
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes run-line {
+            0% {
+                transform: scaleX(0);
+                /* Start with no width */
+                transform-origin: left;
+                /* Start from the left side */
+            }
+
+            100% {
+                transform: scaleX(1);
+                /* End with full width */
+                transform-origin: left;
+                /* Expand towards the right side */
+            }
+        }
+        #video {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Adjust max-width as needed */
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <h1 id="runningWords">
+        I hope this video can make your day！
+    </h1>
+    <div id="main">
+            <p id="home">Home</p>        
+    <div id="video">
+        <video id="video_v1 " autoplay controls muted>
+            <source src="pic_in_catyear/v1.mp4" type="video/mp4" />
+        </video>
+    </div>      
+    </div>
+
+    <script src="scripts/script.js"></script>   
+</body>
+
+</html>

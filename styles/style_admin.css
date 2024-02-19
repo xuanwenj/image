@@ -1,0 +1,32 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fcdad9;
+    padding: 10px;
+}
+body{
+    background-color: #fcdad9;
+}
+
+#mainArea {
+    text-align: center;
+}
+#retrieve{
+    margin-top: 20px; 
+}
+
+#layout{
+    flex-wrap: nowrap;
+    
+    margin: 0 auto; 
+
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 100%; /* Set your preferred maximum width */
+    margin: 0 auto; 
+    padding: 10px;
+}

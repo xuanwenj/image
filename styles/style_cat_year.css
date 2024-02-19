@@ -1,0 +1,109 @@
+body {
+
+    background-color: #fcdad9;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 50px;
+    color: olivedrab;
+    text-align: center;
+    
+}
+
+#home{
+    font-size: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Optional: Center align the content horizontally */
+}
+
+.main {
+    display: flex;
+    gap: 20px; /* Adjust the space between the divs as needed */
+}
+
+.text, .image {
+    flex: 1; /* Allow both divs to grow and occupy equal space */
+    background-color: rgb(102, 186, 205);
+    border-radius: 40px;
+    padding: 10px; /* Optional: Add padding for inner content */
+}
+#paragraph{
+    font-size: 30px;
+} 
+#showTime{
+    font-size: 50px;
+}
+#video_v1{
+    width: 10vh !important;
+    height: 50vh !important; 
+    align-self: center;
+}
+.image {
+    background-color: 	#b6c0c5;
+    border-radius: 40px;
+    margin-left: 100px;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-column-gap: 350px; 
+    padding: 50px;
+    /* Gap between grid items */
+}
+
+#myCat_flyin {
+    position: absolute;
+    /* Position the image */
+    top: -100px;
+    /* Initial position outside the page */
+    left: 50%;
+    /* Position from the center horizontally */
+    transform: translateX(15%);
+    /* Center the image horizontally */
+    animation: flyIn 2s forwards;
+   
+    /* animation: flyRotate 2s ease-in-out forwards, rotateAnimation 2s linear infinite; */
+
+}
+
+@keyframes flyIn {
+    from {
+        top: -400px;
+        /* Starting position outside the page */
+        opacity: 0;
+        /* Initially hidden */
+    }
+
+    to {
+        top: 200px;
+        /* Final position from the top */
+        opacity: 1;
+        /* Fully visible */
+        left: 1030px;
+    }
+}
+
+.myCat_fadein {
+    opacity: 0;
+    animation: fadeIn 8s forwards;
+    border-radius: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Start with fully transparent */
+    }
+
+    to {
+        opacity: 1;
+        /* Gradually become fully opaque */
+    }
+}
+
